@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average of Negative Numbers</title>
+</head>
+<body>
+    <script>
+        function sumofNegative(nums){
+            let sum=0, count=0, avg;
+            for(let i=0; i<nums.length; i++){
+                if(nums[i]<0){
+                    sum= sum+nums[i];
+                    count++;
+                }
+            }
+            avg= sum/count;
+            alert("the average of the negative numbers are: "+avg);
+            return avg;
+        }
+        const nums= [-21.2,-67,81,10,-34.1,56]
+        sumofNegative(nums);
+    </script>
+</body>
+</html>
