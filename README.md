@@ -11,3 +11,5 @@ MongoDB, Expressjs, React, Nodejs
 MERN stack is the idea of using Javascript/Node for fullstack web development.
 
 here in this project we learn from the base of html, css, Javascript to the advanced level of Node.js and React
+
+This repository aims to assist you in beginning work on a MERN stack application with a solid file structure as a foundation.
