@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        form{
+            
+            width: 35%;
+            padding-left: 10px;
+        }
+        div{
+            color: rgb(17, 15, 15);
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        input[type="text"],input[type="number"],input[type="password"],input[type="email"],textarea{
+            width: 95%;
+            border: 0ch;
+            border-radius: 3px;
+            padding: 12px 10px;
+            background-color: rgb(247, 246, 255);
+        }
+        input[type="submit"]{
+            width: 95%;
+            padding: 10px 20px 10px 20px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            border-color: rgb(18, 20, 20);
+            background-color: rgb(61, 85, 206);        
+        }
+    </style>
+</head>
+<body style="background-color: rgb(246, 241, 236);">
+        <h1 style=" color: rgb(87, 122, 44);">Registration Form</h1>
+        <div class="error_message" style="display:none"></div>
+        <div class = "error_message" style=" display: none;"></div>
+        <form action="">
+            
+            <div>Name: <input type="text" name="name" id ="name" placeholder="Full Name"></div>
+            <div>Email: <input type="email" name="email" id="email" placeholder="Email Number"></div>
+            <div>Phone: <input type="number" name="number" id="phone" placeholder="Phone Number"></div>
+            <div>Gender: 
+                Male<input type="radio" name="Gender">
+                Female<input type="radio" name="Gender">
+            </div>
+            <div>Address: <textarea name="Address"  id="address" cols="50" rows="8"></textarea></div>
+            <div>Pincode: <input type="number" name="Pincode" id="pincode" placeholder="Pincode"></div>
+            <div>Password: <input type="password" name="password" id="password" placeholder="Password"></div>
+            <div>Confirm Password: <input type="password" name="password" id="cnfpassword" placeholder="Same as Password"></div>
+            <div><input type="checkbox" name="number" id= "chkbx">Agree and Continue</div>
+            <div><input type="submit" name="submit" id="submit" value="Submit"><br><br></div>
+        </form>
+        <div>
+            Name: <span id="show_name"></span>
+            Email: <span id="show_email"></span>
+            Phone: <span id="show_phone"></span>
+            Address: <span id="show_add"></span>
+            Pincode: <span id="show_pin"></span>
+        </div>
+        <script src="form2.js"></script>
+</body>
+</html>
